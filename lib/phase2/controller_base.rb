@@ -2,14 +2,12 @@ module Phase2
   class ControllerBase
     attr_reader :req, :res
 
-    # Setup the controller
     def initialize(req, res)
       @req = req
       @res = res
       @already_built_response = false
     end
 
-    # Helper method to alias @already_built_response
     def already_built_response?
       @already_built_response
     end
